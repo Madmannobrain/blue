@@ -188,7 +188,7 @@
 	current_data = new()
 	current_data.assoc_key = "d00kn00kem"
 	current_data.character_name = "Natalia Lynn"
-	current_data.item_path = /obj/item/clothing/suit/labcoat/augmented
+	current_data.item_path = /obj/item/clothing/suit/storage/toggle/labcoat/augmented
 	L|=current_data
 	
 	custom_items["d00kn00kem"] = L
