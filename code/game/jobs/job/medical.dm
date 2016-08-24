@@ -19,8 +19,8 @@
 			access_chemistry, access_virology, access_cmo, access_surgery, access_RC_announce,
 			access_keycard_auth, access_sec_doors, access_psychiatrist, access_eva, access_external_airlocks, access_maint_tunnels)
 
-	minimum_character_age = 25
-	minimal_player_age = 10
+	minimum_character_age = 27
+	minimal_player_age = 30
 	ideal_character_age = 50
 
 	equip(var/mob/living/carbon/human/H, var/alt_title)
@@ -53,6 +53,7 @@
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics, access_eva)
 	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_virology, access_eva)
 	alt_titles = list("Surgeon","Emergency Physician","Nurse","Virologist")
+	minimal_player_age = 14
 
 	equip(var/mob/living/carbon/human/H, var/alt_title)
 		if(!H)	return 0
@@ -115,7 +116,8 @@
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics)
 	minimal_access = list(access_medical, access_medical_equip, access_chemistry)
 	alt_titles = list("Pharmacist")
-
+	minimum_character_age = 20
+	minimal_player_age = 14
 
 	equip(var/mob/living/carbon/human/H)
 		if(!H)	return 0
@@ -176,6 +178,7 @@
 	access = list(access_medical, access_medical_equip, access_morgue, access_psychiatrist)
 	minimal_access = list(access_medical, access_medical_equip, access_psychiatrist)
 	alt_titles = list("Psychologist")
+	minimum_character_age = 20
 
 	equip(var/mob/living/carbon/human/H, var/alt_title)
 		if(!H)	return 0

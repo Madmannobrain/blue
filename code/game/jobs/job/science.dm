@@ -21,8 +21,8 @@
 			            access_research, access_robotics, access_xenobiology, access_ai_upload, access_tech_storage,
 			            access_RC_announce, access_keycard_auth, access_tcomsat, access_gateway, access_xenoarch)
 
-	minimum_character_age = 25
-	minimal_player_age = 14
+	minimum_character_age = 30
+	minimal_player_age = 30
 	ideal_character_age = 50
 
 	equip(var/mob/living/carbon/human/H)
@@ -60,6 +60,7 @@
 	alt_titles = list("Xenoarcheologist", "Anomalist", "Phoron Researcher")
 
 	minimal_player_age = 14
+	minimum_character_age = 23
 
 	equip(var/mob/living/carbon/human/H)
 		if(!H)	return 0
@@ -93,6 +94,7 @@
 	alt_titles = list("Xenobotanist")
 
 	minimal_player_age = 14
+	minimum_character_age = 23
 
 	equip(var/mob/living/carbon/human/H)
 		if(!H) return 0
@@ -128,6 +130,7 @@
 	alt_titles = list("Biomechanical Engineer","Mechatronic Engineer")
 
 	minimal_player_age = 7
+	minimum_character_age = 23
 
 	equip(var/mob/living/carbon/human/H)
 		if(!H)	return 0

@@ -16,10 +16,10 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	req_admin_notify = 1
 	access = list() 			//See get_access()
 	minimal_access = list() 	//See get_access()
-	minimal_player_age = 14
+	minimal_player_age = 30
 	economic_modifier = 20
 
-	minimum_character_age = 25
+	minimum_character_age = 27
 	ideal_character_age = 70 // Old geezer captains ftw
 
 

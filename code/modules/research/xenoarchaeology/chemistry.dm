@@ -94,7 +94,7 @@ obj/item/weapon/reagent_containers/glass/solution_tray/attackby(obj/item/weapon/
 
 	New()
 		..()
-		reagents.add_reagent("tramadol",10)
+		reagents.add_reagent("oxycodone",10)
 		update_icon()
 		update_name_label()
 
@@ -113,8 +113,7 @@ obj/item/weapon/reagent_containers/glass/solution_tray/attackby(obj/item/weapon/
 
 	New()
 		..()
-		reagents.add_reagent("adrenaline",5)
-		reagents.add_reagent("bicaridine",5)
+		reagents.add_reagent("bicaridine",10)
 		update_icon()
 		update_name_label()
 

@@ -20,8 +20,8 @@
 			            access_forensics_lockers, access_morgue, access_maint_tunnels, access_all_personal_lockers,
 			            access_research, access_engine, access_mining, access_medical, access_construction, access_mailsorting,
 			            access_heads, access_hos, access_RC_announce, access_keycard_auth, access_gateway, access_external_airlocks, access_all_personal_lockers, access_cargo, access_tox, access_senior_security, access_detective, access_research, access_teleporter)
-	minimum_character_age = 25
-	minimal_player_age = 14
+	minimum_character_age = 27
+	minimal_player_age = 30
 
 	equip(var/mob/living/carbon/human/H)
 		if(!H)	return 0
@@ -54,7 +54,8 @@
 	economic_modifier = 5
 	access = list(access_security, access_eva, access_sec_doors, access_brig, access_maint_tunnels, access_morgue, access_external_airlocks, access_engine, access_all_personal_lockers, access_cargo, access_research, access_mailsorting, access_tox, access_armory, access_medical)
 	minimal_access = list(access_security, access_eva, access_sec_doors, access_brig, access_maint_tunnels, access_external_airlocks, access_engine, access_all_personal_lockers, access_cargo, access_research, access_mailsorting, access_tox, access_armory)
-	minimal_player_age = 5
+	minimal_player_age = 14
+	minimum_character_age = 23
 
 	equip(var/mob/living/carbon/human/H)
 		if(!H)	return 0
@@ -90,7 +91,8 @@
 	access = list(access_security, access_sec_doors, access_forensics_lockers, access_morgue, access_maint_tunnels, access_eva, access_external_airlocks, access_detective)
 	minimal_access = list(access_security, access_sec_doors, access_forensics_lockers, access_morgue, access_maint_tunnels, access_eva, access_external_airlocks, access_detective)
 	economic_modifier = 5
-	minimal_player_age = 3
+	minimal_player_age = 14
+	minimum_character_age = 23
 	equip(var/mob/living/carbon/human/H, var/alt_title)
 		if(!H)	return 0
 		H.equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_sec(H), slot_l_ear)
@@ -117,10 +119,11 @@
 	supervisors = "security commissioner and investigator"
 	selection_color = "#7CB9E8"
 	idtype = /obj/item/weapon/card/id/security
-	access = list(access_security, access_sec_doors, access_forensics_lockers, access_morgue, access_maint_tunnels, access_eva, access_external_airlocks)
-	minimal_access = list(access_security, access_sec_doors, access_forensics_lockers, access_morgue, access_maint_tunnels, access_eva, access_external_airlocks)
+	access = list(access_security, access_sec_doors, access_forensics_lockers, access_morgue, access_maint_tunnels, access_eva, access_external_airlocks, access_medical)
+	minimal_access = list(access_security, access_sec_doors, access_forensics_lockers, access_morgue, access_maint_tunnels, access_eva, access_external_airlocks, access_medical)
 	economic_modifier = 2
-	minimal_player_age = 3
+	minimal_player_age = 7
+	minimum_character_age = 23
 	equip(var/mob/living/carbon/human/H, var/alt_title)
 		if(!H)	return 0
 		H.equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_sec(H), slot_l_ear)
@@ -148,7 +151,8 @@
 	economic_modifier = 2
 	access = list(access_security, access_eva, access_sec_doors, access_brig, access_maint_tunnels, access_morgue, access_external_airlocks)
 	minimal_access = list(access_security, access_eva, access_sec_doors, access_brig, access_maint_tunnels, access_external_airlocks)
-	minimal_player_age = 5
+	minimal_player_age = 7
+	minimum_character_age = 20
 	equip(var/mob/living/carbon/human/H)
 		if(!H)	return 0
 		H.equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_sec(H), slot_l_ear)
@@ -182,7 +186,8 @@
 	economic_modifier = 4
 	access = list(access_security, access_eva, access_sec_doors, access_brig, access_maint_tunnels, access_morgue, access_external_airlocks, access_engine, access_all_personal_lockers, access_cargo, access_research, access_mailsorting, access_tox, access_medical, access_senior_security)
 	minimal_access = list(access_security, access_eva, access_sec_doors, access_brig, access_maint_tunnels, access_external_airlocks, access_engine, access_all_personal_lockers, access_cargo, access_research, access_mailsorting, access_tox, access_medical, access_senior_security)
-	minimal_player_age = 10
+	minimal_player_age = 14
+	minimum_character_age = 23
 	equip(var/mob/living/carbon/human/H)
 		if(!H)	return 0
 		H.equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_sec(H), slot_l_ear)

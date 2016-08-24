@@ -109,13 +109,14 @@
 	desc = "The hat of the Security Commissioner. For showing the officers who's in charge."
 	icon_state = "secchiefcap"
 	body_parts_covered = 0
-	siemens_coefficient = 0.8
+	siemens_coefficient = 0.4
+	armor = list(melee = 40, bullet = 55, laser = 30, energy = 40, bomb = 35, bio = 0, rad = 0)
 
 /obj/item/clothing/head/helmet/secchief/dermal
 	name = "Dermal Armour Patch"
 	desc = "You're not quite sure how you manage to take it on and off, but it implants nicely in your head."
 	icon_state = "dermal"
-	siemens_coefficient = 0.6
+	siemens_coefficient = 0.3
 
 /obj/item/clothing/suit/armor/secchief
 	name = "armored overcoat"
@@ -123,9 +124,9 @@
 	icon_state = "secchiefcoat"
 	item_state = "secchiefcoat"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
-	armor = list(melee = 65, bullet = 30, laser = 50, energy = 10, bomb = 25, bio = 0, rad = 0)
+	armor = list(melee = 45, bullet = 65, laser = 40, energy = 40, bomb = 40, bio = 0, rad = 0)
 	flags_inv = HIDEJUMPSUIT
-	siemens_coefficient = 0.6
+	siemens_coefficient = 0.3
 
 
 //Jensen cosplay gear

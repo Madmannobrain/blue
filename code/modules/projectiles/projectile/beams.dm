@@ -2,7 +2,7 @@
 	name = "laser"
 	icon_state = "laser"
 	pass_flags = PASSTABLE | PASSGLASS | PASSGRILLE
-	damage = 40
+	damage = 45
 	damage_type = BURN
 	check_armour = "laser"
 	eyeblur = 4
@@ -26,13 +26,13 @@
 /obj/item/projectile/beam/weaklaser
 	name = "weak laser"
 	icon_state = "laser"
-	damage = 15
+	damage = 20
 
 /obj/item/projectile/beam/lightlaser
-	damage = 18
+	damage = 20
 
 /obj/item/projectile/beam/midlaser
-	damage = 40
+	damage = 45
 	armor_penetration = 20
 
 /obj/item/projectile/beam/heavylaser
@@ -46,8 +46,8 @@
 	impact_type = /obj/effect/projectile/laser_heavy/impact
 
 /obj/item/projectile/beam/heavylaser/cannon
-	damage = 90
-	armor_penetration = 100
+	damage = 80
+	armor_penetration = 80
 
 /obj/item/projectile/beam/xray
 	name = "xray beam"

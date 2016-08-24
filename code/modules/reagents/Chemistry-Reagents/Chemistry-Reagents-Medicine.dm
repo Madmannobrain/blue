@@ -206,6 +206,7 @@
 	reagent_state = LIQUID
 	color = "#800080"
 	overdose = 20
+	scannable = 1
 	metabolism = 0.02
 
 /datum/reagent/oxycodone/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
@@ -327,11 +328,11 @@
 /datum/reagent/hyperzine
 	name = "Hyperzine"
 	id = "hyperzine"
-	description = "Hyperzine is a highly effective, long lasting, muscle stimulant."
+	description = "Hyperzine is a highly toxic but effective muscle stimulant."
 	taste_description = "acid"
 	reagent_state = LIQUID
 	color = "#FF3300"
-	metabolism = REM * 0.15
+	metabolism = REM * 0.5
 	overdose = REAGENTS_OVERDOSE * 0.5
 
 /datum/reagent/hyperzine/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
@@ -340,6 +341,7 @@
 	if(prob(5))
 		M.emote(pick("twitch", "blink_r", "shiver"))
 	M.add_chemical_effect(CE_SPEEDBOOST, 1)
+	M.adjustToxLoss(rand(2))
 
 /datum/reagent/ethylredoxrazine
 	name = "Ethylredoxrazine"

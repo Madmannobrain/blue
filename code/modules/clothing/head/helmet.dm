@@ -7,7 +7,7 @@
 		slot_r_hand_str = "helmet",
 		)
 	flags = THICKMATERIAL
-	armor = list(melee = 40, bullet = 30, laser = 30, energy = 10, bomb = 10, bio = 0, rad = 0)
+	armor = list(melee = 35, bullet = 20, laser = 35, energy = 10, bomb = 35, bio = 0, rad = 0)
 	flags_inv = HIDEEARS|HIDEEYES
 	cold_protection = HEAD
 	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
@@ -47,27 +47,27 @@
 	name = "bullet-resistant helmet"
 	desc = "It's a helmet specifically designed to protect against ballistic projectiles."
 	icon_state = "helmet_bulletproof"
-	armor = list(melee = 10, bullet = 80, laser = 10 ,energy = 10, bomb = 0, bio = 0, rad = 0)
+	armor = list(melee = 15, bullet = 80, laser = 15 ,energy = 10, bomb = 0, bio = 0, rad = 0)
 	flags_inv = HIDEEARS
-	siemens_coefficient = 0.7
+	siemens_coefficient = 0.6
 
 /obj/item/clothing/head/helmet/combat
 	name = "combat helmet"
 	desc = "It's a general purpose combat helmet, designed to protect against typical dangers to your head."
 	icon_state = "helmet_combat"
-	armor = list(melee = 50, bullet = 50, laser = 50 ,energy = 30, bomb = 30, bio = 0, rad = 0)
+	armor = list(melee = 50, bullet = 60, laser = 60, energy = 30, bomb = 40, bio = 0, rad = 0)
 	flags_inv = HIDEEARS
-	siemens_coefficient = 0.6
+	siemens_coefficient = 0.4
 
 /obj/item/clothing/head/helmet/swat
 	name = "\improper SWAT helmet"
 	desc = "They're often used by highly trained SWAT Officers."
 	icon_state = "swat"
-	armor = list(melee = 80, bullet = 60, laser = 50,energy = 25, bomb = 50, bio = 10, rad = 0)
+	armor = list(melee = 65, bullet = 70, laser = 50,energy = 25, bomb = 50, bio = 10, rad = 0)
 	flags_inv = HIDEEARS|HIDEEYES
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_HELMET_MIN_COLD_PROTECTION_TEMPERATURE
-	siemens_coefficient = 0.5
+	siemens_coefficient = 0.2
 
 /obj/item/clothing/head/helmet/thunderdome
 	name = "\improper Thunderdome helmet"
@@ -95,9 +95,9 @@
 		"Unathi" = 'icons/mob/species/unathi/helmet.dmi',
 		)
 
-	armor = list(melee = 60, bullet = 60, laser = 60, energy = 40, bomb = 40, bio = 0, rad = 0)
+	armor = list(melee = 45, bullet = 65, laser = 40, energy = 40, bomb = 40, bio = 0, rad = 0)
 	flags_inv = HIDEEARS
-	siemens_coefficient = 0.7
+	siemens_coefficient = 0.4
 
 /obj/item/clothing/head/helmet/augment
 	name = "Augment Array"
@@ -118,7 +118,7 @@
 		slot_l_hand_str = "syndicate-helm-green",
 		slot_r_hand_str = "syndicate-helm-green",
 		)
-	armor = list(melee = 62, bullet = 50, laser = 50,energy = 35, bomb = 10, bio = 2, rad = 0)
+	armor = list(melee = 50, bullet = 60, laser = 55, energy = 40, bomb = 35, bio = 0, rad = 0)
 
 //Commander
 /obj/item/clothing/head/helmet/ert/command
@@ -147,7 +147,7 @@
 	name = "combat helmet"
 	desc = "It's a helmet designed for assault teams."
 	icon_state = "combathelmet_sentinel"
-	armor = list(melee = 60, bullet = 65, laser = 50, energy = 10, bomb = 35, bio = 0, rad = 0)
+	armor = list(melee = 60, bullet = 65, laser = 50, energy = 30, bomb = 50, bio = 0, rad = 0)
 	flags_inv = HIDEEARS
 	siemens_coefficient = 0.2
 	var/modetoggled = 0
@@ -172,49 +172,3 @@
 				siemens_coefficient = 0.3
 
 			update_clothing_icon()
-
-/obj/item/clothing/head/helmet/assault
-	name = "helmet"
-	icon_state = "helmet"
-	armor = list(melee = 50, bullet = 40, laser = 30, energy = 10, bomb = 10, bio = 0, rad = 0)
-	canremove = 0
-
-/obj/item/clothing/head/helmet/assault/nsf
-	name = "NSF helmet"
-	desc = "no desc."
-	icon_state = "nsfhelmetassault"
-
-/obj/item/clothing/head/helmet/assault/ucf
-	name = "UCF helmet"
-	desc = "no desc."
-	icon_state = "ucfhelmetassault"
-
-/obj/item/clothing/head/helmet/specialist
-	name = "headwear"
-	icon_state = "helmet"
-	armor = list(melee = 10, bullet = 5, laser = 0, energy = 0, bomb = 10, bio = 0, rad = 0)
-	canremove = 0
-
-/obj/item/clothing/head/helmet/specialist/ucf
-	name = "UCF cap"
-	desc = "no desc."
-	icon_state = "ucfhelmetspecialist"
-
-/obj/item/clothing/head/helmet/specialist/nsf
-	name = "NSF cap"
-	desc = "no desc."
-	icon_state = "nsfhelmetspecialist"
-
-/obj/item/clothing/head/helmet/support
-	name = "helmet"
-	icon_state = "helmet"
-	armor = list(melee = 60, bullet = 70, laser = 50, energy = 40, bomb = 40, bio = 0, rad = 0)
-	canremove = 0
-
-/obj/item/clothing/head/helmet/support/nsf
-	name = "NSF heavy helmet"
-	icon_state = "nsfhelmetsupport"
-
-/obj/item/clothing/head/helmet/support/ucf
-	name = "UCF heavy helmet"
-	icon_state = "ucfhelmetsupport"

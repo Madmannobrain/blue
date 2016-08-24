@@ -50,8 +50,8 @@
 	icon_state = "labcoat_aug"
 
 /obj/item/clothing/suit/armor/secchief/hosold
-	icon_state = "secchiefcoat"
-	item_state = "secchiefcoat"
+	icon_state = "hosold"
+	item_state = "hosold"
 
 /obj/item/clothing/head/helmet/secchief/hosold
 	name = "old security chief's hat hat"

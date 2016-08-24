@@ -419,7 +419,7 @@
 
 	firemodes = list(
 		list(mode_name="semiauto", burst=1, fire_delay=0),
-		list(mode_name="2-round bursts", burst=3, fire_delay=null, move_delay=4,    burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.6, 1.0))
+		list(mode_name="2-round bursts", burst=2, fire_delay=null, move_delay=4,    burst_accuracy=list(0,-1), dispersion=list(0.0, 0.6))
 		)
 
 /obj/item/weapon/gun/projectile/automatic/impulsecarbine/update_icon()

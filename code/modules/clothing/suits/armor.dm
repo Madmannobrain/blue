@@ -27,7 +27,7 @@
 	icon_state = "armor"
 	item_state = "armor"
 	blood_overlay_type = "armor"
-	armor = list(melee = 40, bullet = 30, laser = 30, energy = 10, bomb = 10, bio = 0, rad = 0)
+	armor = list(melee = 40, bullet = 45, laser = 35, energy = 10, bomb = 20, bio = 0, rad = 0)
 
 /obj/item/clothing/suit/armor/vest/alt
 	name = "security armor"
@@ -47,6 +47,7 @@
 	icon_state = "overseercoat"
 	item_state = "overseercoat"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	armor = list(melee = 45, bullet = 65, laser = 40, energy = 40, bomb = 40, bio = 0, rad = 0)
 
 /obj/item/clothing/suit/armor/riot
 	name = "riot vest"
@@ -54,7 +55,7 @@
 	icon_state = "riot"
 	item_state = "swat_suit"
 	slowdown = 1
-	armor = list(melee = 80, bullet = 10, laser = 10, energy = 10, bomb = 0, bio = 0, rad = 0)
+	armor = list(melee = 80, bullet = 15, laser = 15, energy = 10, bomb = 0, bio = 0, rad = 0)
 	flags_inv = HIDEJUMPSUIT
 	siemens_coefficient = 0.5
 
@@ -68,7 +69,7 @@
 	icon_state = "bulletproof"
 	item_state = "armor"
 	blood_overlay_type = "armor"
-	armor = list(melee = 10, bullet = 80, laser = 10, energy = 10, bomb = 0, bio = 0, rad = 0)
+	armor = list(melee = 15, bullet = 80, laser = 10, energy = 10, bomb = 0, bio = 0, rad = 0)
 	siemens_coefficient = 0.7
 
 /obj/item/clothing/suit/armor/bulletproof/alt
@@ -82,7 +83,7 @@
 	icon_state = "armor_reflec"
 	item_state = "armor_reflec"
 	blood_overlay_type = "armor"
-	armor = list(melee = 10, bullet = 10, laser = 80, energy = 50, bomb = 0, bio = 0, rad = 0)
+	armor = list(melee = 10, bullet = 10, laser = 80, energy = 60, bomb = 0, bio = 0, rad = 0)
 	siemens_coefficient = 0.1
 
 /obj/item/clothing/suit/armor/laserproof/handle_shield(mob/user, var/damage, atom/damage_source = null, mob/attacker = null, var/def_zone = null, var/attack_text = "the attack")
@@ -111,8 +112,8 @@
 	icon_state = "combat"
 	item_state = "combat"
 	blood_overlay_type = "armor"
-	armor = list(melee = 50, bullet = 50, laser = 50, energy = 30, bomb = 30, bio = 0, rad = 0)
-	siemens_coefficient = 0.6
+	armor = list(melee = 50, bullet = 60, laser = 60, energy = 30, bomb = 40, bio = 0, rad = 0)
+	siemens_coefficient = 0.4
 
 /obj/item/clothing/suit/armor/tactical
 	name = "tactical armor"
@@ -121,8 +122,8 @@
 	item_state = "armor"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	slowdown = 1
-	armor = list(melee = 60, bullet = 60, laser = 60, energy = 40, bomb = 40, bio = 0, rad = 0)
-	siemens_coefficient = 0.7
+	armor = list(melee = 45, bullet = 65, laser = 40, energy = 40, bomb = 40, bio = 0, rad = 0)
+	siemens_coefficient = 0.3
 
 /obj/item/clothing/suit/armor/swat
 	name = "swat suit"
@@ -136,11 +137,11 @@
 	allowed = list(/obj/item/weapon/gun,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs,/obj/item/weapon/tank/emergency_oxygen)
 	slowdown = 1
 	w_class = 5
-	armor = list(melee = 80, bullet = 60, laser = 50,energy = 25, bomb = 50, bio = 100, rad = 100)
+	armor = list(melee = 80, bullet = 70, laser = 60,energy = 40, bomb = 50, bio = 100, rad = 100)
 	flags_inv = HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-	siemens_coefficient = 0.6
+	siemens_coefficient = 0.3
 
 
 /obj/item/clothing/suit/armor/swat/officer
@@ -160,7 +161,7 @@
 	item_state = "armor"
 	blood_overlay_type = "armor"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
-	armor = list(melee = 40, bullet = 30, laser = 30, energy = 10, bomb = 10, bio = 0, rad = 0)
+	armor = list(melee = 40, bullet = 45, laser = 35, energy = 10, bomb = 20, bio = 0, rad = 0)
 
 
 //Reactive armor
@@ -224,7 +225,8 @@
 	icon_state = "ertarmor_cmd"
 	item_state = "armor"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
-	armor = list(melee = 60, bullet = 60, laser = 60, energy = 40, bomb = 20, bio = 0, rad = 0)
+	armor = list(melee = 60, bullet = 70, laser = 55, energy = 40, bomb = 35, bio = 0, rad = 0)
+	siemens_coefficient = 0.4
 
 //Commander
 /obj/item/clothing/suit/armor/vest/ert/command
@@ -272,7 +274,7 @@
 	desc = "A simple kevlar plate carrier. This one has a security badge clipped to the chest."
 	icon_state = "constablevest"
 	item_state = "constablevest"
-	armor = list(melee = 30, bullet = 25, laser = 25, energy = 10, bomb = 10, bio = 0, rad = 0)
+	armor = list(melee = 35, bullet = 45, laser = 35, energy = 10, bomb = 20, bio = 0, rad = 0)
 
 /obj/item/clothing/suit/storage/vest/seniorconstable
 	name = "colonial senior officer's armor vest"
@@ -297,7 +299,7 @@
 	desc = "A heavy kevlar plate carrier with webbing attached."
 	icon_state = "webvest"
 	item_state = "webvest"
-	armor = list(melee = 50, bullet = 40, laser = 40, energy = 25, bomb = 25, bio = 0, rad = 0)
+	armor = list(melee = 40, bullet = 55, laser = 40, energy = 25, bomb = 25, bio = 0, rad = 0)
 	slowdown = 1
 
 //Provides the protection of a merc voidsuit, but only covers the chest/groin, and also takes up a suit slot. In exchange it has no slowdown and provides storage.
@@ -306,7 +308,7 @@
 	desc = "A high-quality heavy kevlar plate carrier in a fetching tan. The vest is surprisingly flexible, and possibly made of an advanced material."
 	icon_state = "mercwebvest"
 	item_state = "mercwebvest"
-	armor = list(melee = 60, bullet = 60, laser = 60, energy = 40, bomb = 40, bio = 0, rad = 0)
+	armor = list(melee = 50, bullet = 65, laser = 60, energy = 30, bomb = 40, bio = 0, rad = 0)
 	slowdown = 0
 
 //All of the armor below is mostly unused
@@ -336,6 +338,7 @@
 	slowdown = 3
 	flags_inv = HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT
 	siemens_coefficient = 0
+	armor = list(melee = 80, bullet = 80, laser = 70, energy = 40, bomb = 70, bio = 0, rad = 0)
 
 /obj/item/clothing/suit/armor/tdome
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
@@ -360,7 +363,7 @@
 	desc = "That's the heavy combat exosuit designed for assault teams."
 	icon_state = "combatarmor_sentinel"
 	item_state = "combatarmor_sentinel"
-	armor = list(melee = 80, bullet = 80, laser = 70, energy = 35, bomb = 70, bio = 0, rad = 0)
+	armor = list(melee = 70, bullet = 80, laser = 60, energy = 35, bomb = 70, bio = 0, rad = 0)
 	slowdown = 5
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	siemens_coefficient = 0.1
@@ -382,7 +385,7 @@
 			else
 				src.icon_state = initial(icon_state)
 				usr << "You toggle your armor to the Sentinel mode."
-				armor = list(melee = 80, bullet = 80, laser = 70, energy = 35, bomb = 70, bio = 0, rad = 0)
+				armor = list(melee = 70, bullet = 80, laser = 60, energy = 35, bomb = 70, bio = 0, rad = 0)
 				slowdown = 5
 				body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 				siemens_coefficient = 0.1
